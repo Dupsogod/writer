@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Boris Popov</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;1,300;1,500;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;1,300;1,500;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery.min.js"></script>
-  
+  <script src="js/owl.carousel.js"></script>
 </head>
+
 <body>
   <header class="header">
     <img src="images/logo.svg" alt="логотип" class="logo">
@@ -17,8 +23,9 @@
       Поддержать автора
     </div>
   </header>
-  <main class="wrap">
+  <main class="wrap wrap--about">
     <nav class="menu">
+      <div class="menu__line"></div>
       <div class="menu__item item-menu active">
         <div class="item-menu__number">
           01
@@ -26,7 +33,7 @@
         <div class="item-menu__text" data-heading="Автор">
           Автор
         </div>
-        
+
       </div>
       <div class="menu__item item-menu">
         <div class="item-menu__number">
@@ -35,7 +42,7 @@
         <div class="item-menu__text" data-heading="Рассказы">
           Рассказы
         </div>
-        
+
       </div>
       <div class="menu__item item-menu">
         <div class="item-menu__number">
@@ -44,14 +51,53 @@
         <div class="item-menu__text" data-heading="Связаться с автором">
           Связаться с автором
         </div>
-        
-      </div>
-      <div class="menu__line"></div>
-    </nav>
-    <article class="about">
 
+      </div>
+    </nav>
+    <article class="content">
+      <section class="content__elem about">
+        <div class="about__navigation">
+          <div class="owl-nav">
+            <div class="owl-prev"></div>
+            <div class="owl-dots"></div>
+            <div class="owl-next"></div>
+          </div>
+        </div>
+        <header class="about__logo">
+          <img src="images/logo--about.svg" alt="Борис Попов">
+        </header>
+        <div class="about__carousel">
+          <div id="carousel" class="owl-carousel owl-theme owl-loaded ">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  1 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                </div>
+                <div class="owl-item">
+                  2 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                </div>
+                <div class="owl-item">
+                  3 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
     </article>
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="#" class="social-button social-button_vk"></a>
+        <a href="#" class="social-button social-button_facebook"></a>
+        <a href="#" class="social-button social-button_instagram"></a>
+      </div>
+      <a href="#" class="share-button">
+        поделиться
+      </a>
+    </footer>
   </main>
   <script src="js/script.js"></script>
 </body>
+
 </html>

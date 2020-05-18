@@ -6,6 +6,24 @@ $('.item-menu').hover(function () {
   }, 300);
 });
 
+//other
+
+
+$(".item-menu--about").on("click", function() {
+  $("body").removeClass();
+  $("body").addClass("body-about");
+});
+
+$(".item-menu--stories").on("click", function() {
+  $("body").removeClass();
+  $("body").addClass("body-stories");
+});
+
+$(".item-menu--communicate").on("click", function() {
+  $("body").removeClass();
+  $("body").addClass("body-communicate");
+});
+
 //tabs menu
 $('.buttonSwitch').on('click', function () {
 	var local_id = $(this).attr('data-tab');
@@ -19,6 +37,15 @@ $('.buttonSwitch').on('click', function () {
 		$('#' + local_id).addClass('active');
 	}
 });
+
+//pagination
+$('.pagination__buttons div').on('click', function () {
+	if (!$(this).hasClass('active')) {
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
+  };
+});  
+
 
 //Carousel
 var time = 15; // time in seconds
@@ -118,4 +145,10 @@ $('.owl-prev').click(function() {
     // Parameters has to be in square bracket '[]'
     owl.trigger('prev.owl.carousel', [300]);
 })
+
+
+/*switch theme*/
+$(".theme-switch").on("click", () => {
+  $("html").toggleClass("light-theme");
+});
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -23,35 +23,32 @@
       Поддержать автора
     </div>
   </header>
-  <main class="wrap wrap--about">
+  <main class="wrap">
     <nav class="menu">
       <div class="menu__line"></div>
-      <div class="menu__item item-menu active buttonSwitch" data-tab="about">
+      <div class="menu__item item-menu item-menu--about active buttonSwitch" data-tab="about">
         <div class="item-menu__number">
           01
         </div>
         <div class="item-menu__text" data-heading="Автор">
           Автор
         </div>
-
       </div>
-      <div class="menu__item item-menu buttonSwitch" data-tab="stories">
+      <div class="menu__item item-menu item-menu--stories buttonSwitch" data-tab="stories">
         <div class="item-menu__number">
           02
         </div>
         <div class="item-menu__text" data-heading="Рассказы">
           Рассказы
         </div>
-
       </div>
-      <div class="menu__item item-menu buttonSwitch" data-tab="communicate">
+      <div class="menu__item item-menu item-menu--communicate buttonSwitch" data-tab="communicate">
         <div class="item-menu__number">
           03
         </div>
         <div class="item-menu__text" data-heading="Связаться с автором">
           Связаться с автором
         </div>
-
       </div>
     </nav>
     <article class="content">
@@ -89,7 +86,287 @@
       </section>
       <!--stories-->
       <section class="content__elem stories" id="stories">
-        23234234
+        <nav class="stories__menu">
+          <form action="#" name="storiesMenu" class="menu-stories">
+            <div class="menu-stories__top">
+              <span>
+                Жанр
+              </span> 
+              <div class="menu-stories__nav">
+                <label>
+                  Фантастика
+                  <input type="radio" name="genre" id="fantastic" value="fantastic">
+                </label>
+                <label>
+                  Триллер
+                  <input type="radio" name="genre" id="thriller" value="thriller">
+                </label> 
+                <label>
+                  Ужасы
+                  <input type="radio" name="genre" id="horror" value="horror">
+                </label>  
+              </div>
+            </div>
+            <div class="menu-stories__top">
+              <span>
+                Дата выпуска
+              </span>
+              <div class="menu-stories__nav">
+                <label>
+                  Новое
+                  <input type="radio" name="date" id="new" value="new">
+                </label>
+                <label>
+                  Старое
+                  <input type="radio" name="date" id="old" value="old">
+                </label> 
+              </div>
+            </div>
+            <div class="menu-stories__top">
+              <span>
+                Рейтинг автора
+              </span>
+              <div class="menu-stories__nav">
+                <label>
+                  Лучшие оценки
+                  <input type="radio" name="ratingAuthor" id="bestAuthor" value="bestAuthor">
+                </label>
+                <label>
+                  Популярное
+                  <input type="radio" name="ratingAuthor" id="popularAuthor" value="popularAuthor">
+                </label> 
+              </div>
+            </div>
+            <div class="menu-stories__top">
+              <span>
+                Рейтинг читателей
+              </span>
+              <div class="menu-stories__nav">
+                <label>
+                  Лучшие оценки
+                  <input type="radio" name="ratingReader" id="bestReader" value="bestReader">
+                </label>
+                <label>
+                  Популярное
+                  <input type="radio" name="ratingReader" id="popularReader" value="popularReader">
+                </label> 
+              </div>
+            </div>
+          </form>
+          <div class="switch">
+            <div class="theme-switch">
+              <div class="theme-switch__switch"></div>
+            </div>
+          </div>
+        </nav>
+        <div class="stories__block">
+          <div class="stories-list">
+            <!--just don't tell them-->
+            <div class="stories-list__elem story story--just-dont-tell-them buttonSwitch" data-tab="story-block">
+              <div class="story__additional additional-elem">
+                <div class="additional-elem__date">
+                  22.05.19
+                </div>
+                <div class="additional-elem__done additional-elem__done--active">
+                  <img src="images/icon--done.svg" alt="выполнено">
+                  <span>Прочитано</span>
+                </div>
+              </div>
+              <div class="story__main">
+                <div class="story__genre">
+                  Фантастика
+                </div>
+                <header class="story__header">
+                  Только не говори им
+                </header>
+                <div class="story__text">
+                  В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
+                </div>
+              </div>
+              <div class="ratings ratings--story">
+                <div class="ratings__stars-block">
+                  <div class="ratings__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="ratings__counter-stars">
+                    4.8
+                  </div>
+                </div>
+                <a href="#" class="ratings__reviews">
+                  Отзывы <span class="ratings__reviews-counter">1</span>
+                </a>
+              </div>
+            </div>
+            <!--chapiteau-->
+            <div class="stories-list__elem story story--chapiteau">
+              <div class="story__additional additional-elem">
+                <div class="additional-elem__date">
+                  13.01.18
+                </div>
+                <div class="additional-elem__done">
+                  <img src="images/icon--done.svg" alt="выполнено">
+                  <span>Прочитано</span>
+                </div>
+              </div>
+              <div class="story__main">
+                <div class="story__genre">
+                  Триллер
+                </div>
+                <header class="story__header">
+                  Шапито
+                </header>
+                <div class="story__text">
+                  В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
+                </div>
+              </div>
+              <div class="ratings ratings--story">
+                <div class="ratings__stars-block">
+                  <div class="ratings__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="ratings__counter-stars">
+                    4.8
+                  </div>
+                </div>
+                <a href="#" class="ratings__reviews">
+                  Отзывы <span class="ratings__reviews-counter">1</span>
+                </a>
+              </div>
+            </div>
+            <!--the main function of God-->
+            <div class="stories-list__elem story story--main-function-of-God">
+              <div class="story__additional additional-elem">
+                <div class="additional-elem__date">
+                  21.03.18
+                </div>
+                <div class="additional-elem__done">
+                  <img src="images/icon--done.svg" alt="выполнено">
+                  <span>Прочитано</span>
+                </div>
+              </div>
+              <div class="story__main">
+                <div class="story__genre">
+                  Фантастика
+                </div>
+                <header class="story__header">
+                  Основная функция бога
+                </header>
+                <div class="story__text">
+                  В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
+                </div>
+              </div>
+              <div class="ratings ratings--story">
+                <div class="ratings__stars-block">
+                  <div class="ratings__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="ratings__counter-stars">
+                    4.8
+                  </div>
+                </div>
+                <a href="#" class="ratings__reviews">
+                  Отзывы <span class="ratings__reviews-counter">1</span>
+                </a>
+              </div>
+            </div>
+            <!--lords of the world-->
+            <div class="stories-list__elem story story--lords-of-the-world">
+              <div class="story__additional additional-elem">
+                <div class="additional-elem__date">
+                  22.05.19
+                </div>
+                <div class="additional-elem__done">
+                  <img src="images/icon--done.svg" alt="выполнено">
+                  <span>Прочитано</span>
+                </div>
+              </div>
+              <div class="story__main">
+                <div class="story__genre">
+                  Триллер
+                </div>
+                <header class="story__header">
+                  Властелины мира
+                </header>
+                <div class="story__text">
+                  В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
+                </div>
+              </div>
+              <div class="ratings ratings--story">
+                <div class="ratings__stars-block">
+                  <div class="ratings__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="ratings__counter-stars">
+                    4.8
+                  </div>
+                </div>
+                <a href="#" class="ratings__reviews">
+                  Отзывы <span class="ratings__reviews-counter">1</span>
+                </a>
+              </div>
+            </div>
+            <!--the game-->
+            <div class="stories-list__elem story story--game">
+              <div class="story__additional additional-elem">
+                <div class="additional-elem__date">
+                  22.05.19
+                </div>
+                <div class="additional-elem__done">
+                  <img src="images/icon--done.svg" alt="выполнено">
+                  <span>Прочитано</span>
+                </div>
+              </div>
+              <div class="story__main">
+                <div class="story__genre">
+                  Фантастика
+                </div>
+                <header class="story__header">
+                  Игра
+                </header>
+                <div class="story__text">
+                  В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
+                </div>
+              </div>
+              <div class="ratings ratings--story">
+                <div class="ratings__stars-block">
+                  <div class="ratings__stars">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="ratings__counter-stars">
+                    4.8
+                  </div>
+                </div>
+                <a href="#" class="ratings__reviews">
+                  Отзывы <span class="ratings__reviews-counter">1</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stories__pagination">
+          <nav class="pagination">
+            <div class="pagination__arrow"></div>
+            <div class="pagination__buttons">
+              <div class="active"></div>
+              <div></div>
+            </div>
+            <div class="pagination__arrow pagination__arrow--right"></div>
+          </nav>
+        </div>
+      </section>
+      <!--story block-->
+      <section class="content__elem communicate" id="story-block">
+
       </section>
       <!--communicate the author-->
       <section class="content__elem communicate" id="communicate">

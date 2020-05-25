@@ -19,7 +19,8 @@
 <body>
   <header class="header">
     <img src="images/logo.svg" alt="логотип" class="logo">
-    <div class="btn btn--cut-corners">
+    <img src="images/logo-dark.svg" alt="логотип" class="logo-dark">
+    <div class="btn popup-open" data-tab="donate">
       Поддержать автора
     </div>
   </header>
@@ -162,13 +163,12 @@
         <div class="stories__block">
           <div class="stories-list">
             <!--just don't tell them-->
-            <div class="stories-list__elem story story--just-dont-tell-them buttonSwitch" data-tab="story-block">
+            <div class="stories-list__elem story story--just-dont-tell-them buttonSwitch" data-tab="storyBlock">
               <div class="story__additional additional-elem">
                 <div class="additional-elem__date">
                   22.05.19
                 </div>
                 <div class="additional-elem__done additional-elem__done--active">
-                  <img src="images/icon--done.svg" alt="выполнено">
                   <span>Прочитано</span>
                 </div>
               </div>
@@ -194,9 +194,9 @@
                     4.8
                   </div>
                 </div>
-                <a href="#" class="ratings__reviews">
+                <div class="ratings__reviews popup-open" data-tab="reviews">
                   Отзывы <span class="ratings__reviews-counter">1</span>
-                </a>
+                </div>
               </div>
             </div>
             <!--chapiteau-->
@@ -206,7 +206,6 @@
                   13.01.18
                 </div>
                 <div class="additional-elem__done">
-                  <img src="images/icon--done.svg" alt="выполнено">
                   <span>Прочитано</span>
                 </div>
               </div>
@@ -232,9 +231,9 @@
                     4.8
                   </div>
                 </div>
-                <a href="#" class="ratings__reviews">
+                <div class="ratings__reviews popup-open" data-tab="reviews">
                   Отзывы <span class="ratings__reviews-counter">1</span>
-                </a>
+                </div>
               </div>
             </div>
             <!--the main function of God-->
@@ -244,7 +243,6 @@
                   21.03.18
                 </div>
                 <div class="additional-elem__done">
-                  <img src="images/icon--done.svg" alt="выполнено">
                   <span>Прочитано</span>
                 </div>
               </div>
@@ -270,9 +268,9 @@
                     4.8
                   </div>
                 </div>
-                <a href="#" class="ratings__reviews">
+                <div class="ratings__reviews popup-open" data-tab="reviews">
                   Отзывы <span class="ratings__reviews-counter">1</span>
-                </a>
+                </div>
               </div>
             </div>
             <!--lords of the world-->
@@ -282,7 +280,6 @@
                   22.05.19
                 </div>
                 <div class="additional-elem__done">
-                  <img src="images/icon--done.svg" alt="выполнено">
                   <span>Прочитано</span>
                 </div>
               </div>
@@ -308,9 +305,9 @@
                     4.8
                   </div>
                 </div>
-                <a href="#" class="ratings__reviews">
+                <div class="ratings__reviews popup-open" data-tab="reviews">
                   Отзывы <span class="ratings__reviews-counter">1</span>
-                </a>
+                </div>
               </div>
             </div>
             <!--the game-->
@@ -320,7 +317,6 @@
                   22.05.19
                 </div>
                 <div class="additional-elem__done">
-                  <img src="images/icon--done.svg" alt="выполнено">
                   <span>Прочитано</span>
                 </div>
               </div>
@@ -346,18 +342,20 @@
                     4.8
                   </div>
                 </div>
-                <a href="#" class="ratings__reviews">
+                <div class="ratings__reviews popup-open" data-tab="reviews">
                   Отзывы <span class="ratings__reviews-counter">1</span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="stories__pagination">
           <nav class="pagination">
-            <div class="pagination__arrow"></div>
+            <div class="pagination__arrow pagination__arrow--left"></div>
             <div class="pagination__buttons">
               <div class="active"></div>
+              <div></div>
+              <div></div>
               <div></div>
             </div>
             <div class="pagination__arrow pagination__arrow--right"></div>
@@ -365,8 +363,73 @@
         </div>
       </section>
       <!--story block-->
-      <section class="content__elem communicate" id="story-block">
-
+      <section class="content__elem story-block" id="storyBlock">
+        <header class="header-story">
+          <div class="title-story">
+            <div class="title-story__links">
+              <div class="title-story__download popup-open" data-tab="download">
+                скачать
+              </div>
+              <div class="title-story__subscribe">
+                Подписаться на рассылку
+              </div>
+            </div>
+            <div class="switch">
+              <div class="theme-switch">
+                <div class="theme-switch__switch"></div>
+              </div>
+            </div>
+          </div>
+          <h1 class="header-story__header" data-heading="Только не говори им">
+            Только не говори им
+          </h1>
+          <div class="ratings ratings--story-block">
+            <div class="ratings__stars-block">
+              <div class="ratings__stars">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="ratings__counter-stars">
+                4.8
+              </div>
+            </div>
+            <div class="ratings__reviews popup-open" data-tab="reviews">
+              Отзывы <span class="ratings__reviews-counter">1</span>
+            </div>
+          </div>
+        </header>
+        <div class="story-block__body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
+          </p>
+        </div>
+        <nav class="pagination pagination--story">
+          <div class="pagination__arrow"></div>
+          <div class="pagination__buttons">
+            <div class="active"></div>
+            <div></div>
+          </div>
+          <div class="pagination__arrow pagination__arrow--right"></div>
+        </nav>
       </section>
       <!--communicate the author-->
       <section class="content__elem communicate" id="communicate">
@@ -414,6 +477,203 @@
       </a>
     </footer>
   </main>
+  <!--popup window download-->
+  <div class="popup-fade" id="download">
+		<div class="popup">
+			<div class="popup__block popup-block">
+				<div class="popup-close"></div>
+				<header class="popup-block__header">
+					Оставьте свой e-mail, чтобы получать оповещения обо всех выходящих новинках
+				</header>
+				<div class="popup-block__form">
+					<form action="#" name="downloadForm" class="communicate-form">
+						<header class="communicate-form__header">
+              E-mail
+            </header>
+            <div class="communicate-form__input-block communicate-form__input-block--download">
+              <input type="email" name="visitorEmailDownload" class="communicate-form__input communicate-form__input--download">
+              <button type="submit" name="visitorSubmit" class="btn btn--communicate-form btn btn--communicate-form--download">
+                Отправить
+              </button>
+            </div>
+            <div class="communicate-form__input-block communicate-form__input-block--download-checkbox">
+              <input type="checkbox" name="visitorEmailNotWant" id="visitorEmailNotWant" class="communicate-form__input-checkbox">
+              <label for="visitorEmailNotWant">  
+                Я не хочу оставлять Е-mail
+              </label>
+            </div>
+					</form>
+        </div>
+        <div class="popup-block__links links-popup-block">
+          <span class="links-popup-block__title">
+            Выберете формат
+          </span>
+          <a href="#" class="btn btn--download-story">pdf</a>
+          <a href="#" class="btn btn--download-story">fb2</a>
+          <a href="#" class="btn btn--download-story">e-pub</a>
+        </div>
+			</div>
+    </div>
+  </div>
+  <div class="popup-fade" id="donate">
+    <div class="popup">
+      <div class="popup__block popup-block popup-block--donate">
+        <div class="popup-close"></div>
+        <header class="popup-block__header popup-block__header--donate">
+        </header>
+        <div class="popup-block__text">
+          Если во время чтения моих рассказов вы получили массу эмоций и с удовольствием провели время, то можете отблагодарить автора. Любое пожертвование - это комплимент автору, который так или иначе ускоряет выход новых произведений. Заранее благодарю вас за поддержку и постараюсь каждую новую историю делать лучше предыдущей
+        </div>
+        <div class="popup-block__links links-popup-block">
+          <span class="links-popup-block__title">
+            способы оплаты
+          </span>
+          <a href="#" class="btn btn--yandex-money"></a>
+          <a href="#" class="btn btn--PayPal"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup-fade" id="reviews">
+    <div class="popup">
+      <div class="popup__block popup-block popup-block--reviews">
+        <div class="popup-close"></div>
+        <div class="reviews-list">
+          <div class="reviews-block">
+            <div class="reviews-block__icon-block icon-block">
+              <div class="icon-block__person">
+                <div class="image-person">
+                  <img src="#" alt="">
+                </div>
+                <div class="person-text">
+                  <div class="person-text__date">
+                    21.08.18
+                  </div>
+                  <div class="person-text__name">
+                    Алексеев Максим
+                  </div>
+                </div>
+              </div>
+              <div class="ratings__stars-block ratings__stars-block--person">
+                <div class="ratings__stars">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="ratings__counter-stars">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__text">
+              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
+            </div>
+          </div>
+          <div class="reviews-block">
+            <div class="reviews-block__icon-block icon-block">
+              <div class="icon-block__person">
+                <div class="image-person">
+                  <img src="#" alt="">
+                </div>
+                <div class="person-text">
+                  <div class="person-text__date">
+                    21.08.18
+                  </div>
+                  <div class="person-text__name">
+                    Алексеев Максим
+                  </div>
+                </div>
+              </div>
+              <div class="ratings__stars-block ratings__stars-block--person">
+                <div class="ratings__stars">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="ratings__counter-stars">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__text">
+              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
+            </div>
+          </div>
+          <div class="reviews-block">
+            <div class="reviews-block__icon-block icon-block">
+              <div class="icon-block__person">
+                <div class="image-person">
+                  <img src="#" alt="">
+                </div>
+                <div class="person-text">
+                  <div class="person-text__date">
+                    21.08.18
+                  </div>
+                  <div class="person-text__name">
+                    Алексеев Максим
+                  </div>
+                </div>
+              </div>
+              <div class="ratings__stars-block ratings__stars-block--person">
+                <div class="ratings__stars">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="ratings__counter-stars">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="reviews-block__text">
+              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
+            </div>
+          </div>
+        </div>
+        <nav class="pagination pagination--reviews">
+          <div class="pagination__arrow"></div>
+          <div class="pagination__buttons">
+            <div class="active"></div>
+            <div></div>
+          </div>
+          <div class="pagination__arrow pagination__arrow--right"></div>
+        </nav>
+        <form action="#" name="communicateForm" class="communicate-form communicate-form--reviews">
+          <div class="communicate-form__input-block communicate-form__input-block--reviews">
+            <div class="communicate-form__col">
+              <header class="communicate-form__header">
+                Имя
+              </header>
+              <input type="email" name="visitorEmailDownload" class="communicate-form__input communicate-form__input--download">
+            </div>
+            <div class="communicate-form__col">
+              <header class="communicate-form__header">
+                Приложите фотографию 
+              </header>
+              <label>
+                <input type="file" name="reviewsDownload" multiple accept="image/jpeg,image/png" class="download-button">
+                <div class="btn--communicate-form btn btn--communicate-form--reviews">
+                  выбрать файл
+                </div> 
+              </label>
+            </div>
+          </div>
+          <header class="communicate-form__header">
+            отзыв
+          </header>
+          <textarea name="visitorDescription" class="communicate-form__input communicate-form__input--textarea communicate-form__input--textarea-reviews" cols="30" rows="10"></textarea>
+          <div class="communicate-form__row">
+            <button type="submit" name="reviewsDownload" class="btn btn--reviews">
+              Оставить отзыв
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="js/script.js"></script>
 </body>
 

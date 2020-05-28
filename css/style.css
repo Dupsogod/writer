@@ -474,6 +474,61 @@ body::before {
   color: var(--color-005);
 }
 
+/*menu for mobile*/
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-swith {
+  margin: 50px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-swith__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid;
+  border-color: var(--color-002);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-swith__button::after {
+  content: var(--background-image-008);
+  position: relative;
+  top: -4px;
+  transition: all .2s ease-in-out;
+}
+
+.menu-swith__button:hover,
+.menu-swith__button--active {
+  background-color: var(--color-002);
+}
+
+.menu-swith__button:hover::after,
+.menu-swith__button--active::after {
+  content: var(--background-image-009);
+  top: 4px;
+  transform: rotate(180deg);
+}
+
+.menu-swith__text {
+  margin-left: 20px;
+  font-family: var(--second-font);
+  font-size: 12px;
+  line-height: 131.54%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-005);
+}
+
 /*header*/
 .header {
   justify-content: space-between;
@@ -700,6 +755,7 @@ body::before {
 .content {
   grid-area: content;
   position: relative;
+  transition: all .3s ease-in-out;
 }
 
 .content__elem {
@@ -1075,6 +1131,11 @@ body::before {
   font-size: 9px;
   text-transform: uppercase;
   color: var(--color-006);
+}
+
+.story__block {
+  display: flex;
+  align-items: center;
 }
 
 .story__main {
@@ -1512,6 +1573,7 @@ body::before {
 .communicate-form__input-block {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .communicate-form__input-block--download-checkbox {
@@ -1650,4 +1712,295 @@ body::before {
   background-image: var(--background-image-018);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/*media*/
+@media (max-width: 1280px) {
+  .body-about {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 30px;
+    overflow-x: hidden;
+    background-size: cover;
+  }
+
+  .body-stories .footer {
+    justify-content: space-between;
+  }
+
+  .switch {
+    display: none;
+  }
+  
+  .switch--mobile {
+    display: flex;
+    position: relative;
+  }
+
+  .btn {
+    width: 165px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .popup {
+    padding: 30px;
+  }
+
+  .popup-block {
+    padding: 30px;
+  }
+
+  .popup-block--donate {
+    padding: 75px 30px 40px 30px;
+    width: auto;
+  }
+
+  .popup-block__header--donate {
+    width: 280px;
+    height: 55px;
+    background-size: contain;
+  }
+
+  .popup-block__text {
+    margin-top: 10px;
+    width: auto;
+    max-width: 500px;
+  }
+
+  .links-popup-block {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-popup-block__title {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .reviews-block {
+    padding: 20px 20px 20px 0;
+    flex-direction: column;
+  }
+
+  .image-person {
+    display: none
+  }
+
+  .reviews-block__text {
+    margin-top: 20px;
+    width: auto;
+  }
+  
+
+  .btn--yandex-money {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .wrap {
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    position: absolute;
+    top: 210px;
+    left: -100%;
+    height: 350px;
+    transition: all .3s ease-in-out;
+  }
+
+  .menu--open {
+    left: 30px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 55px;
+  }
+
+  .content {
+    position: relative;
+    left: 0;
+  }
+
+  .content--close {
+    left: -150%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about__logo, .about__carousel {
+    width: 320px;
+  }
+
+  .about__content {
+    flex-grow: initial;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .about__menu {
+    align-self: start;
+  }
+
+  .owl-nav {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .owl-prev {
+    transform: rotate(-90deg);
+  }
+
+  .owl-next {
+    transform: rotate(90deg);
+  }
+
+  .owl-dots {
+    margin: 0 60px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .owl-dot:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .stories {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .story {
+    padding: 25px 20px;
+    background-size: cover;
+    background-position: 55%;
+  }
+
+  .stories__menu {
+    margin: 40px 0 25px 0;
+    padding: 0 20px;
+  }
+
+  .menu-stories__top span {
+    padding: 8px 5px 12px 5px;
+  }  
+
+  .story__header {
+    line-height: 115%;
+    padding-bottom: 5px;
+  }
+
+  .story__block {
+    padding-left: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .story__main {
+    padding-left: 0;
+  }
+
+  .ratings--story {
+    margin-top: 15px;
+    align-items: flex-start;
+  }
+
+  .stories__pagination {
+    margin-bottom: 65px;
+  }
+
+  .story-block {
+    margin-left: 0;
+  }
+
+  .header-story {
+    margin-top: 0;
+  }
+
+  .header-story__header {
+    padding-bottom: 20px;
+    font-size: 40px;
+    line-height: 115%;
+  }
+
+  .pagination--story {
+    margin-bottom: 80px;
+  }
+
+  .communicate-form--reviews {
+    margin-top: 40px;
+  }
+
+  .communicate-form__col--name-block {
+    flex-grow: 1;
+  }
+
+  .communicate-form__input--download,
+  .communicate-form__input--textarea-reviews  {
+    width: 100%;
+  } 
+  
+  .communicate-form__row {
+    justify-content: flex-start;
+  }
+
+  .communicate {
+    padding-top: 0;
+    align-items: flex-start;
+  }
+
+  .communicate__content, .content__form {
+    width: auto;
+  }
+
+  .communicate__logo {
+    width: 280px;
+    height: 45px;
+    background-size: contain;
+  }
+
+  .communicate__content, 
+  .content__form,
+  .communicate-form__input {
+    max-width: 515px;
+    width: 100%;
+  }
+
+  .communicate__content {
+    margin-top: 10px;
+  }
+
+  .popup-block__header--notification {
+    padding-right: 50px;
+  }
+
+  .btn--communicate-form--download {
+    margin: 20px 0 0 0;
+  }
+
+  .btn--download-story {
+    margin-bottom: 20px;
+  }
+
+  .body-stories .menu,
+  .body-communicate .menu {
+    margin: 0;
+  }
+
+  .body-communicate {
+    background-size: cover;
+  }
 }

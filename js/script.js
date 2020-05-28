@@ -61,7 +61,12 @@ $('.pagination__arrow--right').on('click', function () {
   $(pg).next().addClass('active');
 }); 
 
-
+/*menu-swith*/
+$('.menu-swith__button, .item-menu').on('click', function () {
+  $(".menu-swith__button").toggleClass("menu-swith__button--active");
+  $(".menu").toggleClass("menu--open");
+  $(".content").toggleClass("content--close");
+})
 
 
 

@@ -85,8 +85,18 @@ table {
 
 /*main CSS*/
 
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../fonts/din_pro.eot'); 
+	src: url('../fonts/din_pro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/din_pro.woff2') format('woff2'), 
+		url('../fonts/din_pro.woff') format('woff'),
+		url('../fonts/din_pro.ttf') format('truetype'), 
+		url('../fonts/din_pro.svg#din_pro') format('svg');
+}
+
 :root {
-  --main-font: 'Roboto', sans-serif;
+  --main-font: 'DIN Pro', sans-serif;
   --second-font: 'Oswald', sans-serif;
 }
 
@@ -336,6 +346,7 @@ body::before {
   height: 55px;
   background-color: var(--color-002);
   cursor: pointer;
+  z-index: 2;
 }
 
 .popup-close::before, .popup-close::after {
@@ -476,7 +487,7 @@ body::before {
 
 /*menu for mobile*/
 .mobile-nav {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
 }
@@ -1161,7 +1172,7 @@ body::before {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px var(--color-008);
+  -webkit-text-stroke: .01px var(--color-008);
 }
 
 .story__text {
@@ -1365,7 +1376,7 @@ body::before {
   font-family: var(--color-005);
   font-style: italic;
   font-weight: 900;
-  font-size: 60px; /*изменить на финале на 70px*/
+  font-size: 70px; 
   line-height: 153.52%;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -1394,7 +1405,6 @@ body::before {
   margin-top: 25px;
   font-family: var(--main-font);
   font-size: 16px;
-  font-weight: 300; /*удалить на финале*/
   line-height: 140%;
   color: var(--color-005);
 }
@@ -1579,7 +1589,6 @@ body::before {
 .communicate-form__input-block--download-checkbox {
   margin-top: 15px;
   font-family: var(--main-font);
-  font-weight: 300; /*на финале удалить*/
   font-size: 13px;
   line-height: 155%;
   letter-spacing: -0.01em;
@@ -1730,6 +1739,10 @@ body::before {
 
   .body-stories .footer {
     justify-content: space-between;
+  }
+
+  .mobile-nav {
+    display: flex;
   }
 
   .switch {
@@ -2003,4 +2016,94 @@ body::before {
   .body-communicate {
     background-size: cover;
   }
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+
+  .btn {
+    width: 140px;
+  }
+
+  .menu {
+    height: 270px;
+  }
+
+  .menu::before {
+    left: 28px;
+  }
+ 
+  .menu__line,
+  .item-menu.active::before {
+    left: 27px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .item-menu__number {
+    margin-right: 35px;
+  }
+
+  .item-menu__text {
+    font-size: 18px;
+  }
+
+  .about__content {
+    padding-bottom: 30px;
+  }
+
+  .about__logo, .about__carousel {
+    width: 250px;
+  }
+
+  .owl-carousel .owl-item {
+    font-size: 12px;
+  }
+
+  .popup-block--donate {
+    padding: 15px;
+  }
+
+  .popup-block__text {
+    font-size: 12px;
+  }
+
+  .popup-block__header--donate {
+    width: 150px;
+    height: 25px;
+  }
+
+  .stories {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  .story__block {
+    padding-left: 5px;
+  }
+
+  .story {
+    padding: 25px 10px;
+  }  
+
+  .popup-block--reviews {
+    padding: 10px;
+  }
+
+  .popup-block {
+    padding: 10px;
+  }
+
+  .popup-block__header {
+    font-size: 10px;
+  }
+
+  .popup-block__form {
+    margin-top: 15px;
+  }
+
 }

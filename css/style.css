@@ -2052,6 +2052,10 @@ body::before {
     font-size: 18px;
   }
 
+  .about__menu {
+    display: none;
+  }
+
   .about__content {
     padding-bottom: 30px;
   }

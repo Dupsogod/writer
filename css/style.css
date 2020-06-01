@@ -1080,26 +1080,6 @@ body::before {
   background-size: contain;
 }
 
-.story--just-dont-tell-them {
-  background-image: url(../images/background--just-dont-tell-them.png);
-}
-
-.story--chapiteau {
-  background-image: url(../images/background--chapiteau.png);
-}
-
-.story--main-function-of-God {
-  background-image: url(../images/background--main-function-of-God.png);
-}
-
-.story--lords-of-the-world {
-  background-image: url(../images/background--lords-of-the-world.png);
-}
-
-.story--game {
-  background-image: url(../images/background--game.png);
-}
-
 .additional-elem {
   display: flex;
   flex-direction: column;
@@ -2053,7 +2033,7 @@ body::before {
   }
 
   .about__menu {
-    display: none;
+    display: none
   }
 
   .about__content {

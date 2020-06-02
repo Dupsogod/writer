@@ -786,7 +786,7 @@ body::before {
 }
 
 .item-menu:hover .item-menu__text::after {
-  left: 5px;
+  left: 3px;
 }
 
 .menu__line {

@@ -748,7 +748,7 @@ body::before {
 
 .item-menu__text {
   position: relative;
-  font-family: var(--main-font-italic-bold);
+  font-family: var(--main-font-italic);
   font-size: 22px;
   line-height: 153.52%;
   letter-spacing: 0.05em;

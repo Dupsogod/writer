@@ -88,15 +88,37 @@ table {
 @font-face {
 	font-family: 'DIN Pro';
 	src: url('../fonts/din_pro.eot'); 
-	src: url('../fonts/din_pro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/din_pro.woff2') format('woff2'), 
-		url('../fonts/din_pro.woff') format('woff'),
-		url('../fonts/din_pro.ttf') format('truetype'), 
-		url('../fonts/din_pro.svg#din_pro') format('svg');
+	src: url('../fonts/din_pro.eot?#iefix') format('embedded-opentype'), 
+		url('../fonts/din_pro.woff2') format('woff2'),
+		url('../fonts/din_pro.woff') format('woff'), 
+		url('../fonts/din_pro.ttf') format('truetype'),
+		url('../fonts/din_pro.svg#din_pro') format('svg'); 
+}
+
+@font-face {
+	font-family: 'DIN Pro Medium italic';
+	src: url('../fonts/din_pro_condensed_medium_italic.eot'); 
+	src: url('../fonts/din_pro_condensed_medium_italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/din_pro_condensed_medium_italic.woff2') format('woff2'), 
+		url('../fonts/din_pro_condensed_medium_italic.woff') format('woff'),
+		url('../fonts/din_pro_condensed_medium_italic.ttf') format('truetype'), 
+		url('../fonts/din_pro_condensed_medium_italic.svg#din_pro') format('svg');
+}
+
+@font-face {
+	font-family: 'DIN Pro Black italic';
+	src: url('../fonts/din_pro_condensed_black_italic.eot'); 
+	src: url('../fonts/din_pro_condensed_black_italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/din_pro_condensed_black_italic.woff2') format('woff2'), 
+		url('../fonts/din_pro_condensed_black_italic.woff') format('woff'),
+		url('../fonts/din_pro_condensed_black_italic.ttf') format('truetype'), 
+		url('../fonts/din_pro_condensed_black_italic.svg#din_pro') format('svg');
 }
 
 :root {
   --main-font: 'DIN Pro', sans-serif;
+  --main-font-italic: 'DIN Pro Medium italic', sans-serif;
+  --main-font-italic-bold: 'DIN Pro Black italic', sans-serif;
   --second-font: 'Oswald', sans-serif;
 }
 
@@ -643,6 +665,20 @@ body::before {
   height: 50px;
 }
 
+.btn--reviews-inline {
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 11px;
+  line-height: 153.52%;
+  letter-spacing: 0.03em;
+}
+
+.btn--reviews-inline-002 {
+  margin-top: 0;
+  margin-left: 15px;
+}
+
 .btn:hover {
   clip-path: polygon(0 0, 100% 0, 100% 70%, 100% 100%, 0 100%, 0% 30%);
 }
@@ -712,8 +748,7 @@ body::before {
 
 .item-menu__text {
   position: relative;
-  font-style: italic;
-  font-weight: 500;
+  font-family: var(--main-font-italic-bold);
   font-size: 22px;
   line-height: 153.52%;
   letter-spacing: 0.05em;
@@ -775,6 +810,7 @@ body::before {
 
 .content__elem.active {
   display: flex;
+  justify-content: center;
   flex-grow: 1;
   position: relative;
 }
@@ -795,7 +831,6 @@ body::before {
 
 /*about writer*/
 .about__content {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -834,7 +869,8 @@ body::before {
 
 /*carousel menu*/
 .about__menu {
-  align-self: center;
+  padding: 0 0 60px 50px;
+  align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -990,10 +1026,10 @@ body::before {
 
 .menu-stories__nav label {
   display: block;
-  font-family: var(--main-font);
+  font-family: var(--main-font-italic);
   font-style: italic;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 153.52%;
   text-transform: uppercase;
   color: var(--color-002);
@@ -1130,7 +1166,7 @@ body::before {
 }
 
 .story__main {
-  padding-left: 25px;
+  padding: 0 15px 0 25px;
 }
 
 .story__genre {
@@ -1144,7 +1180,7 @@ body::before {
 }
 
 .story__header {
-  font-family: var(--main-font);
+  font-family: var(--main-font-italic-bold);
   font-style: italic;
   font-weight: 900;
   font-size: 32px;
@@ -1152,7 +1188,7 @@ body::before {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: .01px var(--color-008);
+  -webkit-text-stroke: .8px var(--color-008);
 }
 
 .story__text {
@@ -1353,7 +1389,7 @@ body::before {
 .header-story__header {
   margin-top: 15px;
   position: relative;
-  font-family: var(--color-005);
+  font-family: var(--main-font-italic-bold);
   font-style: italic;
   font-weight: 900;
   font-size: 70px; 
@@ -1844,7 +1880,8 @@ body::before {
   }
 
   .about__menu {
-    align-self: start;
+    padding: 0;
+    align-self: flex-start;
   }
 
   .owl-nav {

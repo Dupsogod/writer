@@ -16,7 +16,7 @@
   <script src="js/owl.carousel.js"></script>
 </head>
 
-<body>
+<body class="body-about">
   <header class="header">
     <img src="images/logo.svg" alt="логотип" class="logo">
     <img src="images/logo-dark.svg" alt="логотип" class="logo-dark">
@@ -40,30 +40,30 @@
   <main class="wrap">
     <nav class="menu">
       <div class="menu__line"></div>
-      <div class="menu__item item-menu item-menu--about active buttonSwitch" data-tab="about">
+      <a href="index.html" class="menu__item item-menu item-menu--about active">
         <div class="item-menu__number">
           01
         </div>
         <div class="item-menu__text" data-heading="Автор">
           Автор
         </div>
-      </div>
-      <div class="menu__item item-menu item-menu--stories buttonSwitch" data-tab="stories">
+      </a>
+      <a href="stories.html" class="menu__item item-menu item-menu--stories">
         <div class="item-menu__number">
           02
         </div>
         <div class="item-menu__text" data-heading="Рассказы">
           Рассказы
         </div>
-      </div>
-      <div class="menu__item item-menu item-menu--communicate buttonSwitch" data-tab="communicate">
+      </a>
+      <a href="communicate.html" class="menu__item item-menu item-menu--communicate">
         <div class="item-menu__number">
           03
         </div>
         <div class="item-menu__text" data-heading="Связаться с автором">
           Связаться с автором
         </div>
-      </div>
+      </a>
     </nav>
     <article class="content">
       <!--about author-->
@@ -77,13 +77,19 @@
               <div class="owl-stage-outer">
                 <div class="owl-stage">
                   <div class="owl-item">
-                    1 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                    1 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим
+                    творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы
+                    можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
                   </div>
                   <div class="owl-item">
-                    2 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                    2 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим
+                    творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы
+                    можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
                   </div>
                   <div class="owl-item">
-                    3 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
+                    3 - Я сделал этот сайт специально, чтобы вы могли бесплатно и в удобном формате ознакомиться с моим
+                    творчеством. Пишу в основном небольшие рассказы в жанрах триллер, мистика, детектив, ужасы. Вы
+                    можете читать онлайн или скачать любой из рассказов - все совершенно безвозмездно!
                   </div>
                 </div>
               </div>
@@ -98,381 +104,6 @@
           </div>
         </div>
       </section>
-      <!--stories-->
-      <section class="content__elem stories" id="stories">
-        <nav class="stories__menu">
-          <form action="#" name="storiesMenu" class="menu-stories">
-            <div class="menu-stories__top">
-              <span>
-                Жанр
-              </span> 
-              <div class="menu-stories__nav">
-                <label>
-                  Фантастика
-                  <input type="radio" name="genre" id="fantastic" value="fantastic">
-                </label>
-                <label>
-                  Триллер
-                  <input type="radio" name="genre" id="thriller" value="thriller">
-                </label> 
-                <label>
-                  Ужасы
-                  <input type="radio" name="genre" id="horror" value="horror">
-                </label>  
-              </div>
-            </div>
-            <div class="menu-stories__top">
-              <span>
-                Дата выпуска
-              </span>
-              <div class="menu-stories__nav">
-                <label>
-                  Новое
-                  <input type="radio" name="date" id="new" value="new">
-                </label>
-                <label>
-                  Старое
-                  <input type="radio" name="date" id="old" value="old">
-                </label> 
-              </div>
-            </div>
-            <div class="menu-stories__top">
-              <span>
-                Рейтинг читателей
-              </span>
-              <div class="menu-stories__nav">
-                <label>
-                  Лучшие оценки
-                  <input type="radio" name="ratingReader" id="bestReader" value="bestReader">
-                </label>
-                <label>
-                  Популярное
-                  <input type="radio" name="ratingReader" id="popularReader" value="popularReader">
-                </label> 
-              </div>
-            </div>
-          </form>
-          <div class="switch">
-            <div class="theme-switch">
-              <div class="theme-switch__switch"></div>
-            </div>
-          </div>
-        </nav>
-        <div class="stories__block">
-          <div class="stories-list">
-            <!--just don't tell them-->
-            <div class="stories-list__elem story story--just-dont-tell-them buttonSwitch" data-tab="storyBlock" style="background-image: url(images/background--just-dont-tell-them.png)">
-              <div class="story__additional additional-elem">
-                <div class="additional-elem__date">
-                  22.05.19
-                </div>
-                <div class="additional-elem__done additional-elem__done--active">
-                  <span>Прочитано</span>
-                </div>
-              </div>
-              <div class="story__block">
-                <div class="story__main">
-                  <div class="story__genre">
-                    Фантастика
-                  </div>
-                  <header class="story__header">
-                    Только не говори им
-                  </header>
-                  <div class="story__text">
-                    В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
-                  </div>
-                </div>
-                <div class="ratings ratings--story">
-                  <div class="ratings__stars-block">
-                    <div class="ratings__stars">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                    <div class="ratings__counter-stars">
-                      4.8
-                    </div>
-                  </div>
-                  <div class="btn btn--reviews-inline popup-open" data-tab="reviews">
-                    Отзывы <span class="ratings__reviews-counter">1</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--chapiteau-->
-            <div class="stories-list__elem story story--chapiteau" style="background-image: url(images/background--chapiteau.png)">
-              <div class="story__additional additional-elem">
-                <div class="additional-elem__date">
-                  13.01.18
-                </div>
-                <div class="additional-elem__done">
-                  <span>Прочитано</span>
-                </div>
-              </div>
-              <div class="story__block">
-                <div class="story__main">
-                  <div class="story__genre">
-                    Триллер
-                  </div>
-                  <header class="story__header">
-                    Шапито
-                  </header>
-                  <div class="story__text">
-                    В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
-                  </div>
-                </div>
-                <div class="ratings ratings--story">
-                  <div class="ratings__stars-block">
-                    <div class="ratings__stars">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                    <div class="ratings__counter-stars">
-                      4.8
-                    </div>
-                  </div>
-                  <div class="btn btn--reviews-inline popup-open" data-tab="reviews">
-                    Отзывы <span class="ratings__reviews-counter">1</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--the main function of God-->
-            <div class="stories-list__elem story story--main-function-of-God" style="background-image: url(images/background--main-function-of-God.png)">
-              <div class="story__additional additional-elem">
-                <div class="additional-elem__date">
-                  21.03.18
-                </div>
-                <div class="additional-elem__done">
-                  <span>Прочитано</span>
-                </div>
-              </div>
-              <div class="story__block">
-                <div class="story__main">
-                  <div class="story__genre">
-                    Фантастика
-                  </div>
-                  <header class="story__header">
-                    Основная функция бога
-                  </header>
-                  <div class="story__text">
-                    В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
-                  </div>
-                </div>
-                <div class="ratings ratings--story">
-                  <div class="ratings__stars-block">
-                    <div class="ratings__stars">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                    <div class="ratings__counter-stars">
-                      4.8
-                    </div>
-                  </div>
-                  <div class="btn btn--reviews-inline popup-open" data-tab="reviews">
-                    Отзывы <span class="ratings__reviews-counter">1</span>
-                  </div>
-                </div>
-              </div> 
-            </div>
-            <!--lords of the world-->
-            <div class="stories-list__elem story story--lords-of-the-world" style="background-image: url(images/background--lords-of-the-world.png)">
-              <div class="story__additional additional-elem">
-                <div class="additional-elem__date">
-                  22.05.19
-                </div>
-                <div class="additional-elem__done">
-                  <span>Прочитано</span>
-                </div>
-              </div>
-              <div class="story__block">
-                <div class="story__main">
-                  <div class="story__genre">
-                    Триллер
-                  </div>
-                  <header class="story__header">
-                    Властелины мира
-                  </header>
-                  <div class="story__text">
-                    В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
-                  </div>
-                </div>
-                <div class="ratings ratings--story">
-                  <div class="ratings__stars-block">
-                    <div class="ratings__stars">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                    <div class="ratings__counter-stars">
-                      4.8
-                    </div>
-                  </div>
-                  <div class="btn btn--reviews-inline popup-open" data-tab="reviews">
-                    Отзывы <span class="ratings__reviews-counter">1</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--the game-->
-            <div class="stories-list__elem story story--game" style="background-image: url(images/background--game.png)">
-              <div class="story__additional additional-elem">
-                <div class="additional-elem__date">
-                  22.05.19
-                </div>
-                <div class="additional-elem__done">
-                  <span>Прочитано</span>
-                </div>
-              </div>
-              <div class="story__block">
-                <div class="story__main">
-                  <div class="story__genre">
-                    Фантастика
-                  </div>
-                  <header class="story__header">
-                    Игра
-                  </header>
-                  <div class="story__text">
-                    В целом, конечно, реализация намеченных плановых заданий предоставляет широкие возможности для направлений прогрессивного развития 
-                  </div>
-                </div>
-                <div class="ratings ratings--story">
-                  <div class="ratings__stars-block">
-                    <div class="ratings__stars">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                    <div class="ratings__counter-stars">
-                      4.8
-                    </div>
-                  </div>
-                  <div class="btn btn--reviews-inline popup-open" data-tab="reviews">
-                    Отзывы <span class="ratings__reviews-counter">1</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="stories__pagination">
-          <nav class="pagination">
-            <div class="pagination__arrow pagination__arrow--left"></div>
-            <div class="pagination__buttons">
-              <div class="active"></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div class="pagination__arrow pagination__arrow--right"></div>
-          </nav>
-        </div>
-      </section>
-      <!--story block-->
-      <section class="content__elem story-block" id="storyBlock">
-        <header class="header-story">
-          <div class="title-story">
-            <div class="title-story__links">
-              <div class="title-story__download popup-open" data-tab="download">
-                скачать
-              </div>
-              <div class="title-story__subscribe">
-                Подписаться на рассылку
-              </div>
-            </div>
-            <div class="switch">
-              <div class="theme-switch">
-                <div class="theme-switch__switch"></div>
-              </div>
-            </div>
-          </div>
-          <h1 class="header-story__header" data-heading="Только не говори им">
-            Только не говори им
-          </h1>
-          <div class="ratings ratings--story-block">
-            <div class="ratings__stars-block">
-              <div class="ratings__stars">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-              <div class="ratings__counter-stars">
-                4.8
-              </div>
-            </div>
-            <div class="btn btn--reviews-inline btn--reviews-inline-002 popup-open" data-tab="reviews">
-              Отзывы <span class="ratings__reviews-counter">1</span>
-            </div>
-          </div>
-        </header>
-        <div class="story-block__body">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem illo voluptate esse natus alias dicta optio, reiciendis ipsa voluptatem iure aspernatur, quod illum atque? Harum eligendi cupiditate laboriosam architecto cum.
-          </p>
-        </div>
-        <nav class="pagination pagination--story">
-          <div class="pagination__arrow"></div>
-          <div class="pagination__buttons">
-            <div class="active"></div>
-            <div></div>
-          </div>
-          <div class="pagination__arrow pagination__arrow--right"></div>
-        </nav>
-      </section>
-      <!--communicate the author-->
-      <section class="content__elem communicate" id="communicate">
-        <header class="content__header content__header--communicate communicate__logo">
-        </header>
-        <div class="communicate__content">
-          <header class="title-text">
-            Вы можете отправить автору любое сообщение: от предложения о сотрудничестве до отзыва на произведение или предложений по изменению сайта. <span class="title-text__link title-text__link--underline">Заполните поля,</span> введите текст своего сообщения и кликните на кнопку <span class="title-text__link ">отправить</span>. И не переживайте: я читаю все письма с сайта, так что ваше точно не окажется без внимания. До новых встреч на страницах моих рассказов!
-          </header>    
-        </div>
-        <div class="content__form">
-          <form action="#" name="communicateForm" class="communicate-form">
-            <header class="communicate-form__header">
-              Имя
-            </header>
-            <input type="text" name="visitorName" class="communicate-form__input">
-            <header class="communicate-form__header">
-              E-mail
-            </header>
-            <input type="email" name="visitorEmail" class="communicate-form__input">
-            <header class="communicate-form__header">
-              Телефон (не обязательно)
-            </header>
-            <input type="tel" maxlength="12" name="visitorTel" class="communicate-form__input" placeholder="+7">
-            <header class="communicate-form__header">
-              Описание
-            </header>
-            <textarea name="visitorDescription" class="communicate-form__input communicate-form__input--textarea" cols="30" rows="10">
-            </textarea>
-            <button type="submit" name="visitorSubmit" class="btn btn--communicate-form">
-              Отправить запрос
-            </button>
-          </form>
-        </div>
-      </section>
     </article>
     <footer class="footer">
       <div class="footer__social">
@@ -485,44 +116,6 @@
       </a>
     </footer>
   </main>
-  <!--popup window download-->
-  <div class="popup-fade" id="download">
-		<div class="popup">
-			<div class="popup__block popup-block">
-				<div class="popup-close"></div>
-				<header class="popup-block__header popup-block__header--notification">
-					Оставьте свой e-mail, чтобы получать оповещения обо всех выходящих новинках
-				</header>
-				<div class="popup-block__form">
-					<form action="#" name="downloadForm" class="communicate-form">
-						<header class="communicate-form__header">
-              E-mail
-            </header>
-            <div class="communicate-form__input-block communicate-form__input-block--download">
-              <input type="email" name="visitorEmailDownload" class="communicate-form__input communicate-form__input--download">
-              <button type="submit" name="visitorSubmit" class="btn btn--communicate-form btn btn--communicate-form--download">
-                Отправить
-              </button>
-            </div>
-            <div class="communicate-form__input-block communicate-form__input-block--download-checkbox">
-              <input type="checkbox" name="visitorEmailNotWant" id="visitorEmailNotWant" class="communicate-form__input-checkbox">
-              <label for="visitorEmailNotWant">  
-                Я не хочу оставлять Е-mail
-              </label>
-            </div>
-					</form>
-        </div>
-        <div class="popup-block__links links-popup-block">
-          <span class="links-popup-block__title">
-            Выберете формат
-          </span>
-          <a href="#" class="btn btn--download-story">pdf</a>
-          <a href="#" class="btn btn--download-story">fb2</a>
-          <a href="#" class="btn btn--download-story">e-pub</a>
-        </div>
-			</div>
-    </div>
-  </div>
   <div class="popup-fade" id="donate">
     <div class="popup">
       <div class="popup__block popup-block popup-block--donate">
@@ -542,147 +135,5 @@
       </div>
     </div>
   </div>
-  <div class="popup-fade" id="reviews">
-    <div class="popup">
-      <div class="popup__block popup-block popup-block--reviews">
-        <div class="popup-close"></div>
-        <div class="reviews-list">
-          <div class="reviews-block">
-            <div class="reviews-block__icon-block icon-block">
-              <div class="icon-block__person">
-                <div class="image-person">
-                  <img src="#" alt="">
-                </div>
-                <div class="person-text">
-                  <div class="person-text__date">
-                    21.08.18
-                  </div>
-                  <div class="person-text__name">
-                    Алексеев Максим
-                  </div>
-                </div>
-              </div>
-              <div class="ratings__stars-block ratings__stars-block--person">
-                <div class="ratings__stars">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="ratings__counter-stars">
-                  4.8
-                </div>
-              </div>
-            </div>
-            <div class="reviews-block__text">
-              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
-            </div>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-block__icon-block icon-block">
-              <div class="icon-block__person">
-                <div class="image-person">
-                  <img src="#" alt="">
-                </div>
-                <div class="person-text">
-                  <div class="person-text__date">
-                    21.08.18
-                  </div>
-                  <div class="person-text__name">
-                    Алексеев Максим
-                  </div>
-                </div>
-              </div>
-              <div class="ratings__stars-block ratings__stars-block--person">
-                <div class="ratings__stars">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="ratings__counter-stars">
-                  4.8
-                </div>
-              </div>
-            </div>
-            <div class="reviews-block__text">
-              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
-            </div>
-          </div>
-          <div class="reviews-block">
-            <div class="reviews-block__icon-block icon-block">
-              <div class="icon-block__person">
-                <div class="image-person">
-                  <img src="#" alt="">
-                </div>
-                <div class="person-text">
-                  <div class="person-text__date">
-                    21.08.18
-                  </div>
-                  <div class="person-text__name">
-                    Алексеев Максим
-                  </div>
-                </div>
-              </div>
-              <div class="ratings__stars-block ratings__stars-block--person">
-                <div class="ratings__stars">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="ratings__counter-stars">
-                  4.8
-                </div>
-              </div>
-            </div>
-            <div class="reviews-block__text">
-              Я расскажу вам об очень хорошем расскаже Бориса Попова "Только не говори им". Эта книга очень хорошая и смешная, она интересная и для детей и для взрослых, даже маленькие дети смогут понять о чём написано. Эта книга очень знамения и популярная, сейчас многие дети читают эту книгу, и никак нельзя оторваться, в ней много смешных рассказов к примеру как Мишкина Каша, Живая шляпа, ну и конечно сам рассказ Фантазёры. В этой книге нету невозможного, писатель написал всё так, как будто это когда то происходило. И мне тоже нравится эта книга
-            </div>
-          </div>
-        </div>
-        <nav class="pagination pagination--reviews">
-          <div class="pagination__arrow"></div>
-          <div class="pagination__buttons">
-            <div class="active"></div>
-            <div></div>
-          </div>
-          <div class="pagination__arrow pagination__arrow--right"></div>
-        </nav>
-        <form action="#" name="communicateForm" class="communicate-form communicate-form--reviews">
-          <div class="communicate-form__input-block communicate-form__input-block--reviews">
-            <div class="communicate-form__col communicate-form__col--name-block">
-              <header class="communicate-form__header">
-                Имя
-              </header>
-              <input type="email" name="visitorEmailDownload" class="communicate-form__input communicate-form__input--download">
-            </div>
-            <div class="communicate-form__col">
-              <header class="communicate-form__header">
-                Приложите фотографию 
-              </header>
-              <label>
-                <input type="file" name="reviewsDownload" multiple accept="image/jpeg,image/png" class="download-button">
-                <div class="btn--communicate-form btn btn--communicate-form--reviews">
-                  выбрать файл
-                </div> 
-              </label>
-            </div>
-          </div>
-          <header class="communicate-form__header">
-            отзыв
-          </header>
-          <textarea name="visitorDescription" class="communicate-form__input communicate-form__input--textarea communicate-form__input--textarea-reviews" cols="30" rows="10"></textarea>
-          <div class="communicate-form__row">
-            <button type="submit" name="reviewsDownload" class="btn btn--reviews">
-              Оставить отзыв
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
   <script src="js/script.js"></script>
 </body>
-
-</html>

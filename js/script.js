@@ -6,22 +6,6 @@ $('.item-menu').hover(function () {
   }, 300);
 });
 
-//other
-$(".item-menu--about").on("click", function() {
-  $("body").removeClass();
-  $("body").addClass("body-about");
-});
-
-$(".item-menu--stories").on("click", function() {
-  $("body").removeClass();
-  $("body").addClass("body-stories");
-});
-
-$(".item-menu--communicate").on("click", function() {
-  $("body").removeClass();
-  $("body").addClass("body-communicate");
-});
-
 //tabs menu
 $('.buttonSwitch').on('click', function () {
 	var local_id = $(this).attr('data-tab');

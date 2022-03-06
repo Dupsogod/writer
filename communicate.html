@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Boris Popov</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,500;1,300;1,500;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+</head>
+
+<body class="body-communicate">
+  <header class="header">
+    <img src="images/logo.svg" alt="логотип" class="logo">
+    <img src="images/logo-dark.svg" alt="логотип" class="logo-dark">
+    <div class="btn popup-open" data-tab="donate">
+      Поддержать автора
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <menu class="menu-swith">
+      <div class="menu-swith__button"></div>
+      <div class="menu-swith__text">
+        Меню
+      </div>
+    </menu>
+    <div class="switch switch--mobile">
+      <div class="theme-switch">
+        <div class="theme-switch__switch"></div>
+      </div>
+    </div>
+  </div>
+  <main class="wrap">
+    <nav class="menu">
+      <div class="menu__line"></div>
+      <a href="index.html" class="menu__item item-menu item-menu--about">
+        <div class="item-menu__number">
+          01
+        </div>
+        <div class="item-menu__text" data-heading="Автор">
+          Автор
+        </div>
+      </a>
+      <a href="stories.html" class="menu__item item-menu item-menu--stories">
+        <div class="item-menu__number">
+          02
+        </div>
+        <div class="item-menu__text" data-heading="Рассказы">
+          Рассказы
+        </div>
+      </a>
+      <a href="communicate.html" class="menu__item item-menu item-menu--communicate active">
+        <div class="item-menu__number">
+          03
+        </div>
+        <div class="item-menu__text" data-heading="Связаться с автором">
+          Связаться с автором
+        </div>
+      </a>
+    </nav>
+    <article class="content">
+      <section class="content__elem communicate active" id="communicate">
+        <header class="content__header content__header--communicate communicate__logo">
+        </header>
+        <div class="communicate__content">
+          <header class="title-text">
+            Вы можете отправить автору любое сообщение: от предложения о сотрудничестве до отзыва на произведение или
+            предложений по изменению сайта. <span class="title-text__link title-text__link--underline">Заполните
+              поля,</span> введите текст своего сообщения и кликните на кнопку <span
+              class="title-text__link ">отправить</span>. И не переживайте: я читаю все письма с сайта, так что ваше
+            точно не окажется без внимания. До новых встреч на страницах моих рассказов!
+          </header>
+        </div>
+        <div class="content__form">
+          <form action="#" name="communicateForm" class="communicate-form">
+            <header class="communicate-form__header">
+              Имя
+            </header>
+            <input type="text" name="visitorName" class="communicate-form__input">
+            <header class="communicate-form__header">
+              E-mail
+            </header>
+            <input type="email" name="visitorEmail" class="communicate-form__input">
+            <header class="communicate-form__header">
+              Телефон (не обязательно)
+            </header>
+            <input type="tel" maxlength="12" name="visitorTel" class="communicate-form__input" placeholder="+7">
+            <header class="communicate-form__header">
+              Описание
+            </header>
+            <textarea name="visitorDescription" class="communicate-form__input communicate-form__input--textarea"
+              cols="30" rows="10">
+            </textarea>
+            <button type="submit" name="visitorSubmit" class="btn btn--communicate-form">
+              Отправить запрос
+            </button>
+          </form>
+        </div>
+      </section>
+    </article>
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="#" class="social-button social-button_vk"></a>
+        <a href="#" class="social-button social-button_facebook"></a>
+        <a href="#" class="social-button social-button_instagram"></a>
+      </div>
+      <a href="#" class="share-button">
+        поделиться
+      </a>
+    </footer>
+  </main>
+  <!--popup window download-->
+  <div class="popup-fade" id="donate">
+    <div class="popup">
+      <div class="popup__block popup-block popup-block--donate">
+        <div class="popup-close"></div>
+        <header class="popup-block__header popup-block__header--donate">
+        </header>
+        <div class="popup-block__text">
+          Если во время чтения моих рассказов вы получили массу эмоций и с удовольствием провели время, то можете
+          отблагодарить автора. Любое пожертвование - это комплимент автору, который так или иначе ускоряет выход новых
+          произведений. Заранее благодарю вас за поддержку и постараюсь каждую новую историю делать лучше предыдущей
+        </div>
+        <div class="popup-block__links links-popup-block">
+          <span class="links-popup-block__title">
+            способы оплаты
+          </span>
+          <a href="#" class="btn btn--yandex-money"></a>
+          <a href="#" class="btn btn--PayPal"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

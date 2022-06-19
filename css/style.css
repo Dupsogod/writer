@@ -161,6 +161,7 @@ html {
   --background-image-020: url(../images/icon--facebook.svg);
   --background-image-021: url(../images/icon--instagram.svg);
   --background-image-023: url(../images/icon--done.svg);
+  --background-image-024: url(../images/icon--telegram.svg);
   transition: all 0.5s ease; /*for switch theme*/
 }
 
@@ -1720,6 +1721,10 @@ a {
 
 .social-button_instagram {
   background-image: var(--background-image-021);
+}
+
+.social-button_telegram {
+  background-image: var(--background-image-024);
 }
 
 .share-button {

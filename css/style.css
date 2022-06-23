@@ -162,6 +162,7 @@ html {
   --background-image-021: url(../images/icon--instagram.svg);
   --background-image-023: url(../images/icon--done.svg);
   --background-image-024: url(../images/icon--telegram.svg);
+  --background-viel: rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease; /*for switch theme*/
 }
 
@@ -197,6 +198,7 @@ html.light-theme {
   --background-image-020: url(../images/icon--facebook-002.svg);
   --background-image-021: url(../images/icon--instagram-002.svg);
   --background-image-023: url(../images/icon--done-002.svg);
+  --background-viel: rgba(255, 255, 255, 0.5);
 }
 
 body {
@@ -963,6 +965,7 @@ a {
   display: inline-flex;
   align-items: center;
   font-family: var(--second-font);
+  z-index: 3;
 }
 
 .menu-stories__top span {
@@ -1111,9 +1114,10 @@ a {
 }
 
 .story {
-  padding: 35px 50px;
+  position: relative;
   display: flex;
   width: 100%;
+  padding: 35px 50px;
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-image: var(--gradient-002);
@@ -1123,11 +1127,22 @@ a {
   background-size: contain;
 }
 
+.story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--background-viel);
+}
+
 .additional-elem {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 53px;
+  z-index: 2;
 }
 
 .additional-elem__date {
@@ -1170,6 +1185,7 @@ a {
 .story__block {
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .story__main {
@@ -1359,6 +1375,10 @@ a {
   background-image: var(--background-image-010);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.title-story__download--non-icon::before {
+  display: none;
 }
 
 .title-story__subscribe {

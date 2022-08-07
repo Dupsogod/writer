@@ -356,14 +356,31 @@ a {
   background-image: var(--background-image-017);
   background-repeat: no-repeat;
   background-position: 70% 25%;
-  overflow-y: hidden;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
+.popup-block--reviews::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.popup-block--reviews::-webkit-scrollbar {
+	width: 5px;
+}
+
+.popup-block--reviews::-webkit-scrollbar-thumb {
+	background-color: var(--color-002);
+}
+
+.popup-block--reviews {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-002) transparent;
+}
+
 .popup-close {
-  position: absolute;
+  position: sticky;
   top: 0;
-  right: -1px;
+  left: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,6 +478,10 @@ a {
   font-size: 13px;
   line-height: 19px;
   color: var(--color-002);
+}
+
+.reviews-list {
+  padding: 0 80px 40px 80px;
 }
 
 .reviews-block {
@@ -1126,6 +1147,7 @@ a {
   background-position: right;
   background-size: contain;
   overflow: auto;
+  overflow-y: hidden;
 }
 
 .story::before {
@@ -1615,6 +1637,7 @@ a {
 /*form's style*/
 .communicate-form--reviews {
   margin-top: 82px;
+  padding: 0 80px 40px 80px;
 }
 
 .content__form {
@@ -1851,11 +1874,11 @@ a {
   }
 
   .popup {
-    padding: 30px;
+    padding: 10px;
   }
 
-  .popup-block {
-    padding: 30px;
+  .popup-close {
+    left: auto;
   }
 
   .popup-block--donate {
@@ -1884,6 +1907,10 @@ a {
   .links-popup-block__title {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .reviews-list {
+    padding: 0 30px 40px 80px;
   }
 
   .reviews-block {
@@ -2054,6 +2081,7 @@ a {
 
   .communicate-form--reviews {
     margin-top: 40px;
+    padding: 0 30px 40px 80px;
   }
 
   .communicate-form__col--name-block {
@@ -2191,15 +2219,15 @@ a {
 
   .story {
     padding: 250px 10px 25px 10px;
-  }  
+  }
 
   .story__image {
     padding: 25px 10px;
   }
 
-  .popup-block--reviews {
+  /* .popup-block--reviews {
     padding: 10px;
-  }
+  } */
 
   .popup-block {
     padding: 10px;
@@ -2212,5 +2240,4 @@ a {
   .popup-block__form {
     margin-top: 15px;
   }
-
 }
